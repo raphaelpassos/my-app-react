@@ -1,12 +1,11 @@
 import React from 'react';
 import { StyleSheet, View, Button, Image, Text } from 'react-native';
-import Arte from '../../assets/arte.jpg';
-
+import Carna from '../../assets/carna.jpg'
 export default function TelaInicial() {
   return (
       <View style={ estilos.containerTelaInicial}>
-        <Image 
-        source={ Arte } 
+         <Image 
+        source={ Carna } 
         style={estilos.img}  
         />
       </View>
