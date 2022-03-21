@@ -21,7 +21,10 @@ const estilos = StyleSheet.create({
   img:{
     marginTop: 20,
     marginBottom: 20,
-    width: 150,
-    height: 150
+    width: 350,
+    height: 350,
+    borderRadius: 75,
+    borderColor: '#000',
+    borderWidth: 2
   }
 });

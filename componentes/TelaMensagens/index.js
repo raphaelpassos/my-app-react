@@ -1,21 +1,19 @@
 import React from 'react';
 import {  StyleSheet, View, Button, Image, Text } from 'react-native';
 import Musica from '../../assets/musica.jpg'
-export default function TelaHospedagem(props) {
+export default function TelaMensagens() {
  return (
-     <View style={ estilos.containerTelaHospedagem}>
+     <View style={ estilos.containerTelaMensagens}>
         <Text>Pousadas e Hotéis em Paraty</Text>
         <Image 
         source={ Musica } 
         style={estilos.img}  
         />
-        <Button title="Passeios" onPress={ ()=> props.navigation.navigate('Passeios')}/>
-        <Button title="Restaurantes" onPress={ ()=> props.navigation.navigate('Restaurantes')}/>
      </View>
  );
 }
  const estilos = StyleSheet.create({
-    containerTelaHospedagem: {
+    containerTelaMensagens: {
       flex: 1,
       backgroundColor: '#ffdb58',
       alignItems: 'center',
