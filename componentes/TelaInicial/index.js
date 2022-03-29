@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Button, Image, Text, Pressable } from 'react-native';
 import Arte from '../../assets/arte.jpg';
-import Icone from '../../assets/home-icone.png'
+import Icone from '../../assets/Rio-Icone.jpg'
 export default function TelaInicial() {
   return (
       <View style={ estilos.containerTelaInicial}>
@@ -9,10 +9,9 @@ export default function TelaInicial() {
         source={ Arte } 
         style={estilos.img}  
         />
-        <Pressable>
-          style={estilos.icone}
-          <Image source={Icone}/>
-        </Pressable>
+        <Pressable >
+        <Image name= "Explorar" style={ estilos.botao } source={Icone}/>
+      </Pressable>
       </View>
   );
 }
@@ -31,5 +30,13 @@ const estilos = StyleSheet.create({
     borderRadius: 75,
     borderColor: '#000',
     borderWidth: 2
+  },
+  botao:{
+    width: 120,
+    height: 40,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: '#923',
+    borderRadius: 20,
   }
 });

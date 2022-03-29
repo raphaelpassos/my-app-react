@@ -6,15 +6,11 @@ import Fundo from '../../assets/Rio-Icone.jpg'
 export default function TelaCriação(props) {
   return (
     <ImageBackground source={Fundo} style={estilos.fundo}>
-      <View style={ estilos.containerTelaInicial}>
-         <Image 
+      <View style={ estilos.containerTelaInicial}> 
+         <Image  
         source={ Carna } 
         style={estilos.img}  
         />
-
-        <Button title="Hospedagem"onPress={ ()=> props.navigation.navigate('TelaHospedagem')}/>
-        <Button title="Passeios" onPress={ ()=> props.navigation.navigate('Passeios')}/>
-        <Button title="Restaurantes" onPress={ ()=> props.navigation.navigate('Restaurantes')}/>
       </View>
     </ImageBackground>
       

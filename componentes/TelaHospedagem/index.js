@@ -5,12 +5,13 @@ export default function TelaHospedagem(props) {
  return (
      <View style={ estilos.containerTelaHospedagem}>
         <Text>Pousadas e Hotéis em Paraty</Text>
-        <Image 
-        source={ Musica } 
-        style={estilos.img}  
-        />
+        <Image />
+        <View style={estilos.boxBotao}>
+        <Button title="Hospedagem"onPress={ ()=> props.navigation.navigate('TelaHospedagem')}/>
         <Button title="Passeios" onPress={ ()=> props.navigation.navigate('Passeios')}/>
         <Button title="Restaurantes" onPress={ ()=> props.navigation.navigate('Restaurantes')}/>
+        </View>
+        
      </View>
  );
 }
@@ -29,5 +30,8 @@ export default function TelaHospedagem(props) {
       borderRadius: 75,
     borderColor: '#000',
     borderWidth: 2
-    }
+    },
+  boxBotao:{
+    marginBottom: 10,
+  }
   });
