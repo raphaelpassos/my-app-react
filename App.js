@@ -6,7 +6,7 @@ import { createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { createStackNavigator} from '@react-navigation/stack'
 import { FontAwesome5, Ionicons, MaterialIcons, Foundation } from '@expo/vector-icons'; 
 
-import TelaInicial from './componentes/TelaInicial' 
+import TelaInicial from './componentes/TelaInicial'  
 import TelaHospedagem from './componentes/TelaHospedagem'
 import TelaPasseios from './componentes/TelaPasseios'
 import TelaRestaurantes from './componentes/TelaRestaurantes'
