@@ -1,12 +1,13 @@
 import React from 'react';
 import { StyleSheet, View, Button, Image, Text, Pressable, ScrollView } from 'react-native';
-import Arte from '../../assets/arte.jpg';
-import Icone from '../../assets/Rio-Icone.jpg'
+import Arte from '../../../assets/images/arte.jpg';
+import Icone from '../../../assets/images/Rio-Icone.jpg'
 import estilos from './estilos';
 
 export default function TelaInicial() {
-  return (
-    <ScrollView>
+  return ('')
+}
+   /*  <ScrollView>
       <View style={ estilos.boxCard }>
         <Image 
         source={ Arte } 
@@ -37,5 +38,4 @@ export default function TelaInicial() {
         <Image name= "Explorar" style={ estilos.botao } source={Icone}/>
       </Pressable>
       </View>
-      </ScrollView>
-  )};
+      </ScrollView> */

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Button, Image, Text } from 'react-native';
-import Teatro from '../../assets/teatro.jpg'
+import Teatro from '../../../assets/images/teatro.jpg'
 export default function TelaPasseios() {
   return (
       <View style={ estilos.containerTelaPasseios}>

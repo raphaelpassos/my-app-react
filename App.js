@@ -4,38 +4,41 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { createStackNavigator} from '@react-navigation/stack'
-import { FontAwesome5, Ionicons, MaterialIcons, Foundation } from '@expo/vector-icons'; 
+import { FontAwesome5, Ionicons, MaterialIcons, Foundation, Fontisto } from '@expo/vector-icons'; 
 
-import TelaInicial from './componentes/TelaInicial'  
-import TelaHospedagem from './componentes/TelaHospedagem'
-import TelaPasseios from './componentes/TelaPasseios'
-import TelaRestaurantes from './componentes/TelaRestaurantes'
-import TelaFavoritos from './componentes/TelaFavoritos'
-import TelaMensagens from './componentes/TelaMensagens'
-import TelaPerfil from './componentes/TelaPerfil'
+import TelaInicialScreen from './src/screens/TelaInicial';
+
+import TelaInicial from './src/componentes/TelaInicial'  
+import TelaHospedagem from './src/componentes/TelaHospedagem'
+import TelaPasseios from './src/componentes/TelaPasseios'
+import TelaRestaurantes from './src/componentes/TelaRestaurantes'
+import TelaFavoritos from './src/componentes/TelaFavoritos'
+import TelaMensagens from './src/componentes/TelaMensagens'
+import TelaPerfil from './src/componentes/TelaPerfil'
 
 const Tabs = createBottomTabNavigator();
-const Stack = createStackNavigator();  
- 
+const Stack = createStackNavigator();   
+  
 export default function App() {
   return(
 <NavigationContainer >
 <Tabs.Navigator screenOptions={{ headerShown: false}}>
     <Tabs.Screen 
       name="Explorar" 
-      component = { TelaInicial } 
+      component = { TelaInicialScreen } 
       options={{
         tabBarIcon: () => (
-          <FontAwesome5 name="home" size={24} color="black" />
+          <Fontisto name="search" size={24} color="black" />
         ),
       }}
-    />
+    /> 
     <Tabs.Screen 
       name="Criação" 
       component = { TelaCriação }
       options={{
         tabBarIcon: () => (
-          <Ionicons name="create" size={24} color="black" />        ),
+          <Ionicons name="create" size={24} color="black" />        
+          ),
       }}
     />
     <Tabs.Screen 
@@ -51,7 +54,8 @@ export default function App() {
       component = { TelaMensagens }
       options={{
         tabBarIcon: () => (
-            <Foundation name="comment" size={24} color="black" />        ),
+            <Foundation name="comment" size={24} color="black" />        
+            ),
       }}
     />
     <Tabs.Screen 
@@ -59,7 +63,8 @@ export default function App() {
       component = { TelaPerfil }
       options={{
         tabBarIcon: () => (
-            <Ionicons name="person-circle" size={25} color="black" />        ),
+            <Ionicons name="person-circle" size={25} color="black" />       
+             ),
       }}
     />
 </Tabs.Navigator>

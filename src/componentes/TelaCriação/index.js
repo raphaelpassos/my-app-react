@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, View, Button, Image, Text } from 'react-native';
 import { ImageBackground } from 'react-native-web';
-import Carna from '../../assets/carna.jpg'
-import Fundo from '../../assets/Rio-Icone.jpg'
+import Carna from '../../assets/images/carna.jpg'
+import Fundo from '../../assets/images/Rio-Icone.jpg'
 export default function TelaCriação(props) {
   return (
     <ImageBackground source={Fundo} style={estilos.fundo}>

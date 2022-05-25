@@ -1,6 +1,6 @@
 import React from 'react';
 import {  StyleSheet, View, Button, Image, Text } from 'react-native';
-import Musica from '../../assets/musica.jpg'
+import Musica from '../../../assets/images/musica.jpg'
 export default function TelaFavoritos() {
  return (
      <View style={ estilos.containerTelaFavoritos}>
