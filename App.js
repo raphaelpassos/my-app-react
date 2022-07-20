@@ -73,9 +73,9 @@ export default function App() {
 };
 function TelaCriação() {
   return(
-<Stack.Navigator> 
+<Stack.Navigator >
 <Stack.Screen name="Hospedagem" component = { TelaHospedagem } options={{ headerShown: false }}/>
-<Stack.Screen name="Passeios" component = { TelaPasseios }/> 
+<Stack.Screen name="Passeios" component = { TelaPasseios } /> 
 <Stack.Screen name="Restaurantes" component = { TelaRestaurantes }/>
 </Stack.Navigator>
   )

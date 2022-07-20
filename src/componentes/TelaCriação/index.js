@@ -1,23 +1,17 @@
 import React from 'react';
 import { StyleSheet, View, Button, Image, Text } from 'react-native';
 import { ImageBackground } from 'react-native-web';
-import Carna from '../../assets/images/carna.jpg'
-import Fundo from '../../assets/images/Rio-Icone.jpg'
 export default function TelaCriação(props) {
-  return (
-    <ImageBackground source={Fundo} style={estilos.fundo}>
-      <View style={ estilos.containerTelaInicial}> 
-         <Image  
-        source={ Carna } 
-        style={estilos.img}  
-        />
+  return (  
+    <ImageBackground >
+      <View> 
       </View>
-    </ImageBackground>
+    </ImageBackground> 
       
   );
 }
 const estilos = StyleSheet.create({
-  containerTelaInicial: {
+  /* containerTelaInicial: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -37,5 +31,5 @@ const estilos = StyleSheet.create({
   },
   buttonBox:{
 
-  }
+  } */
 });
