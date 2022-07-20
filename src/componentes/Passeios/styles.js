@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
   
-    bedroms:{
+    passeio:{
         marginVertical: 10, 
         color: '#5b5b5b',
 

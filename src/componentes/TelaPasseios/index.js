@@ -1,30 +1,17 @@
 import React from 'react';
 import { StyleSheet, View, Button, Image, Text } from 'react-native';
-import Teatro from '../../../assets/images/teatro.jpg'
+import { SafeAreaView, ScrollView, StatusBar } from 'react-native-web';
+import Passeios from '../Passeios';
+
 export default function TelaPasseios() {
   return (
-      <View style={ estilos.containerTelaPasseios}>
-       <Image 
-        source={ Teatro } 
-        style={estilos.img}  
-        />
-      </View>
+    <ScrollView>
+<StatusBar barStyle="dark-content"/>
+    <SafeAreaView>
+        <Passeios/>
+        <Passeios/>
+        <Passeios/>
+    </SafeAreaView>
+</ScrollView>
   );
 }
-const estilos = StyleSheet.create({
-  containerTelaPasseios: {
-    flex: 1,
-    backgroundColor: '#ffdb58',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  img:{
-    marginTop: 20,
-    marginBottom: 20,
-    width: 350,
-    height: 350,
-    borderRadius: 75,
-    borderColor: '#000',
-    borderWidth: 2
-  }
-});
