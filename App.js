@@ -6,7 +6,7 @@ import { createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { createStackNavigator} from '@react-navigation/stack'
 import { FontAwesome5, Ionicons, MaterialIcons, Foundation, Fontisto } from '@expo/vector-icons'; 
 
-import TelaInicialScreen from './src/screens/TelaInicial';
+import Home from './src/screens/Home';
 
 import TelaInicial from './src/componentes/TelaInicial'  
 import TelaHospedagem from './src/componentes/TelaHospedagem'
@@ -25,7 +25,7 @@ export default function App() {
 <Tabs.Navigator screenOptions={{ headerShown: false}}>
     <Tabs.Screen 
       name="Explorar" 
-      component = { TelaInicialScreen } 
+      component = { Home } 
       options={{
         tabBarIcon: () => (
           <Fontisto name="search" size={24} color="black" />

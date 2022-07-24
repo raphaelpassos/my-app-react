@@ -3,7 +3,12 @@ import {  StyleSheet, View, Button, Image, Text } from 'react-native';
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native-web';
 import styles from './styles';
 import Post from '../Post';
+import feed from '../../../assets/data/feed';
+import SearchResultsScreen from '../../screens/SearchResults';
 
+const post1 = feed[0];
+const post2 = feed[1];
+const post3 = feed[2];
 
 export default function TelaHospedagem(props) {
  return (
@@ -15,9 +20,7 @@ export default function TelaHospedagem(props) {
     </View>
 <StatusBar barStyle="dark-content"/>
     <SafeAreaView>
-        <Post/>
-        <Post/>
-        <Post/>
+       <SearchResultsScreen/>
     </SafeAreaView>
 </ScrollView>
 
