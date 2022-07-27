@@ -2,13 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Button, Image, Text } from 'react-native';
 import { ImageBackground } from 'react-native-web';
 export default function TelaCriação(props) {
-  return (  
-    <ImageBackground >
-      <View> 
-      </View>
-    </ImageBackground> 
-      
-  );
+  
 }
 const estilos = StyleSheet.create({
   /* containerTelaInicial: {

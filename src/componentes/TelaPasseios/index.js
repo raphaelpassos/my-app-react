@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Button, Image, Text } from 'react-native';
 import { SafeAreaView, ScrollView, StatusBar } from 'react-native-web';
+import SearchResultsScreen from '../../screens/SearchResults';
 import Passeios from '../Passeios';
 
 export default function TelaPasseios() {
@@ -8,9 +9,7 @@ export default function TelaPasseios() {
     <ScrollView>
 <StatusBar barStyle="dark-content"/>
     <SafeAreaView>
-        <Passeios/>
-        <Passeios/>
-        <Passeios/>
+       <SearchResultsScreen/>
     </SafeAreaView>
 </ScrollView>
   );

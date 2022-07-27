@@ -2,9 +2,18 @@ import React from 'react';
 import {  StyleSheet, View, Button, Image, Text } from 'react-native';
 import { SafeAreaView, ScrollView } from 'react-native-web';
 import styles from './styles';
-import restaurant from '../../../assets/images/restaurante.jpg'
+import { useNavigation } from '@react-navigation/native';
 
-export default function Restaurant(props) {
+const Restaurant = (props) => {
+
+const restaurant = props.restaurant;
+
+const navigation = useNavigation();
+
+const goToPostPage = () => {
+    navigation.navigate('Restaurant', {restaurantId: restaurant.id});
+  }
+
  return (
 
 <View  style={ styles.container}>
@@ -12,29 +21,29 @@ export default function Restaurant(props) {
              {/*Image*/}
             <Image 
             style={styles.image} 
-            source={restaurant}
+            source={{uri: restaurant.image}}
             />
 
              {/*Bed e Bedrom*/}
-            <Text style={styles.place}> 1 place  </Text>
+            <Text style={styles.place}> 
+            {restaurant.bed} bed {restaurant.bedroom} bedrom  
+            </Text>
 
             {/*Type e Description*/}
-            <Text style={styles.description}>Our excellent location, right 
-            on Paseo de Gracia, allows you to easily reach most of the main 
-            tourist attractions on foot, as well as any of the city's convention 
-            centers, just a few minutes away by private 
-            or public transport.
+            <Text style={styles.description}>
+            {restaurant.type}. {restaurant.title}. 
             </Text>
 
             {/*Old price e new price*/} 
             <Text style={styles.prices}>
-                <Text style={styles.oldPrice}> $36</Text>
-                <Text style={styles.price}> $40</Text>
+                <Text style={styles.oldPrice}> ${restaurant.oldPrice}</Text>
+                <Text style={styles.price}> ${restaurant.newPrice}</Text>
                     / night
             </Text>
 
              {/*Total price*/} 
-             <Text style={styles.totalPrice}>$238 total</Text>
+             <Text style={styles.totalPrice}>${restaurant.totalPrice}</Text>
        </View>
  );
 }
+export default Restaurant;
