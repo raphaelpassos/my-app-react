@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
         margin:20,
         flexDirection: 'row',
         justifyContent: 'space-around',
-        flexWrap:'wrap' 
+        flexWrap:'wrap',
+        
       },
 });
 export default styles;
