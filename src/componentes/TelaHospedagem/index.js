@@ -5,6 +5,9 @@ import styles from './styles';
 import Post from '../Post';
 import feed from '../../../assets/data/feed';
 import SearchResultsScreen from '../../screens/SearchResults';
+import DestinationSearchScreen from '../../screens/DestinationSearch';
+import GuestsScreen from '../../screens/Guests';
+import Router from '../../navigation/Router'
 
 const post1 = feed[0];
 const post2 = feed[1];
@@ -19,9 +22,12 @@ export default function TelaHospedagem(props) {
         <Button title="Restaurantes" onPress={ ()=> props.navigation.navigate('Restaurantes')}/>
     </View>
 <StatusBar barStyle="dark-content"/>
-    <SafeAreaView>
+<Router/>
+   {/*  <SafeAreaView>
+        <DestinationSearchScreen/>
+        <GuestsScreen/>
        <SearchResultsScreen/>
-    </SafeAreaView>
+    </SafeAreaView> */}
 </ScrollView>
 
  );

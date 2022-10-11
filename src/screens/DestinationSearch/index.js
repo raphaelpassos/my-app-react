@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { View, FlatList, Text, TextInput} from "react-native";
 import styles from "./styles.js";
 import searchResults from "../../../assets/data/search.js";
+import Entypo from  "react-native-vector-icons/Entypo";
 
 const DestinationSearchScreen = (props) => {
     
@@ -22,14 +23,14 @@ const DestinationSearchScreen = (props) => {
      {/* List of destination*/}
         <FlatList
         data={searchResults}
-        renderItem={({item}) => {
+        renderItem={({item}) => (
             <View style={styles.row}>
                 <View style={styles.iconContainer}>
-                    <Entypo name={"location-pin"} size={35} />
+                    <Entypo name={"location-pin"} size={30} />
                 </View>
                 <Text style={{styles}}>{item.description}</Text>
             </View>
-        }}
+     )}
         />
 
     </View>
