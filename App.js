@@ -15,6 +15,8 @@ import TelaRestaurantes from './src/componentes/TelaRestaurantes'
 import TelaFavoritos from './src/componentes/TelaFavoritos'
 import TelaMensagens from './src/componentes/TelaMensagens'
 import TelaPerfil from './src/componentes/TelaPerfil'
+import TelaCriação from './src/componentes/TelaCriação'
+
 
 const Tabs = createBottomTabNavigator();
 const Stack = createStackNavigator();   
@@ -71,12 +73,4 @@ export default function App() {
 </NavigationContainer> 
   )
 };
-function TelaCriação() {
-  return(
-<Stack.Navigator >
-<Stack.Screen name="Hospedagem" component = { TelaHospedagem } options={{ headerShown: false }}/>
-<Stack.Screen name="Passeios" component = { TelaPasseios } /> 
-<Stack.Screen name="Restaurantes" component = { TelaRestaurantes }/>
-</Stack.Navigator>
-  )
-};
+

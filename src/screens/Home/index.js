@@ -3,12 +3,15 @@ import { ImageBackground, View, Text, Pressable } from 'react-native-web';
 import styles from './styles'
 import Wallpaper from '../../../assets/images/wallpaper.jpg';
 import { Fontisto } from '@expo/vector-icons'; 
+import { useNavigation } from '@react-navigation/native';
+
 const TelaInicialScreen = (props) => {
+    const navigation = useNavigation();
     return (
         <View>
 
             <Pressable style={styles.searchButton} 
-            onPress={() => console.warn('Search Btn clicked')}>
+            onPress={() => navigation.navigate('Destination Search')}>
                 <Fontisto name='search' size={25} color={'#f15454'}/>
                 <Text style={styles.searchButtonText}>Where are you going?</Text>
             </Pressable>

@@ -21,14 +21,12 @@ export default function TelaHospedagem(props) {
         <Button title="Passeios" onPress={ ()=> props.navigation.navigate('Passeios')}/>
         <Button title="Restaurantes" onPress={ ()=> props.navigation.navigate('Restaurantes')}/>
     </View>
-<StatusBar barStyle="dark-content"/>
-<Router/>
-   {/*  <SafeAreaView>
-        <DestinationSearchScreen/>
+
+    <SafeAreaView>
         <GuestsScreen/>
-       <SearchResultsScreen/>
-    </SafeAreaView> */}
+    </SafeAreaView> 
 </ScrollView>
+
 
  );
 }
